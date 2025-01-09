@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Coffe;
-use App\Http\Requests\StoreCoffeRequest;
-use App\Http\Requests\UpdateCoffeRequest;
+use App\Models\Coffee;
+use Illuminate\Http\Request;
 
-class CoffeController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $products = Coffee::all();
+        return view('home', compact('products'));
     }
 
     /**
@@ -27,7 +27,7 @@ class CoffeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCoffeRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class CoffeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Coffe $coffe)
+    public function show(string $id)
     {
         //
     }
@@ -43,7 +43,7 @@ class CoffeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Coffe $coffe)
+    public function edit(string $id)
     {
         //
     }
@@ -51,7 +51,7 @@ class CoffeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCoffeRequest $request, Coffe $coffe)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -59,7 +59,7 @@ class CoffeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Coffe $coffe)
+    public function destroy(string $id)
     {
         //
     }
