@@ -121,7 +121,7 @@ h2 {
     background-color: #a67a4e;
 }
 
-/* Quote Section */
+/* Testimonial Section */
 .custom-section {
   margin: 150px;
   padding: 40px 0;
@@ -250,6 +250,21 @@ h2 {
     text-decoration: underline;
 }
 
+/* New Arrivals and best selling */
+.arrival {
+  transition: transform 0.2s ease;
+}
+.arrival:hover {
+  transform: scale(1.05);
+}
+
+.selling {
+  transition: transform 0.2s ease;
+}
+.selling:hover {
+  transform: scale(1.05);
+}
+
 /* Subscribe */
 .btn .btn-outline-subscribe {
   background-color: transparent;
@@ -267,16 +282,24 @@ h2 {
 }
 
 /* Blog */
-.blog-href .card {
+.blog-href {
   transition: transform 0.2s ease;
 }
 .blog-href:hover {
-  text-decoration: underline;
+  transform: scale(1.05);
 }
 
 /* Follow instagram */
 .instagram-section {
-  margin: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.insta {
+  transition: transform 0.2s ease;
+}
+.insta:hover {
+  transform: scale(1.05);
 }
 
 /* Footer Styling */

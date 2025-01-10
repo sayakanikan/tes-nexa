@@ -75,9 +75,8 @@
 </div>
 
 {{-- Categories --}}
-<div class="container py-5 my-5">
+<div class="container py-5 my-5" id="categories">
     <div class="row g-4">
-      <!-- Card 1 -->
       <div class="col-md-6">
         <div class="row g-3 align-items-center category-card">
           <div class="col-4">
@@ -90,7 +89,6 @@
           </div>
         </div>
       </div>
-      <!-- Card 2 -->
       <div class="col-md-6">
         <div class="row g-3 align-items-center category-card">
           <div class="col-4">
@@ -103,7 +101,6 @@
           </div>
         </div>
       </div>
-      <!-- Card 3 -->
       <div class="col-md-6">
         <div class="row g-3 align-items-center category-card">
           <div class="col-4">
@@ -116,7 +113,6 @@
           </div>
         </div>
       </div>
-      <!-- Card 4 -->
       <div class="col-md-6">
         <div class="row g-3 align-items-center category-card">
           <div class="col-4">
@@ -138,7 +134,7 @@
         <h2 class="mb-4">New Arrivals</h2>
         <div class="d-flex flex-column">
             @foreach ($newArrivals as $item)
-                <div class="card mb-2">
+                <div class="card arrival mb-2">
                     <div class="card-body d-flex justify-content-between">
                         <div class="d-flex">
                             <img src="{{ asset('images/'.$item->image) }}" width="50px" height="50px" style="border-radius: 50%;" class="me-2 mt-1" alt="Product">
@@ -158,7 +154,7 @@
         <h2 class="mb-4">Best Selling</h2>
         <div class="d-flex flex-column">
             @foreach ($bestSelling as $item)
-                <div class="card mb-2">
+                <div class="card selling mb-2">
                     <div class="card-body d-flex justify-content-between">
                         <div class="d-flex">
                             <img src="{{ asset('images/'.$item->image) }}" width="50px" height="50px" style="border-radius: 50%;" class="me-2 mt-1" alt="Product">
@@ -177,7 +173,7 @@
 </div>
 
 {{-- Subscribe --}}
-<section class="custom-section text-center ">
+<section class="custom-section text-center">
     <div class="container">
         <p class="custom-text" style="color: #b38b59; font-weight: bold">
             SUBSCRIBE US
@@ -200,8 +196,8 @@
 <div class="row mb-5">
     @foreach ($blogs as $item)
     <div class="col-md-4 mt-4">
-        <a href="#" class="blog-href">
-            <div class="card">
+        <a href="#">
+            <div class="card blog-href">
                 <img src="{{ asset('images/'.$item->image) }}" class="card-img-top" alt="Blog Img">
                 <div class="card-body">
                 <h5 class="card-title">{{ $item->title }}</h5>
@@ -214,28 +210,28 @@
 </div>
 
 {{-- Follow our instagram --}}
-<div class="row instagram-section">
+<div class="row instagram-section" id="contact">
     <div class="col-md-12">
         <h2 class="text-center">FOLLOW OUR INSTAGRAM #BEANIE</h2>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 insta">
         <img src="{{ asset('/images/insta-1.jpg') }}" alt="Insta Post" width="200px" style="border-radius: 8px">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 insta">
         <img src="{{ asset('/images/insta-2.jpg') }}" alt="Insta Post" width="200px" style="border-radius: 8px">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 insta">
         <img src="{{ asset('/images/insta-3.jpg') }}" alt="Insta Post" width="200px" style="border-radius: 8px">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 insta">
         <img src="{{ asset('/images/insta-4.jpg') }}" alt="Insta Post" width="200px" style="border-radius: 8px">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 insta">
         <img src="{{ asset('/images/insta-5.jpg') }}" alt="Insta Post" width="200px" style="border-radius: 8px">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 insta">
         <img src="{{ asset('/images/insta-6.jpg') }}" alt="Insta Post" width="200px" style="border-radius: 8px">
     </div>
 </div>
