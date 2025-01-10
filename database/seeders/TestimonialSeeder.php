@@ -13,9 +13,23 @@ class TestimonialSeeder extends Seeder
      */
     public function run(): void
     {
-        Testimonial::create([
-            "testimonial" => "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto recusandae officia, vitae ipsam aliquid a?",
-            "author" => "Sarah Anderson"
-        ]);
+        $data = [
+            [
+                "testimonial" => "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto recusandae officia, vitae ipsam aliquid a?",
+                "author" => "Sarah Anderson"
+            ],
+            [
+                "testimonial" => "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto recusandae officia, vitae ipsam aliquid a?",
+                "author" => "John Doe"
+            ],
+            [
+                "testimonial" => "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto recusandae officia, vitae ipsam aliquid a?",
+                "author" => "Jane Smith"
+            ]
+        ];
+
+        foreach ($data as $testi) {
+            Testimonial::create($testi);
+        }
     }
 }

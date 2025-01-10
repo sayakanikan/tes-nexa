@@ -16,19 +16,29 @@ class CoffeeSeeder extends Seeder
         Coffee::create([
             "name" => "Caramelicious",
             "price" => "29.00",
-            "item_sold" => "390"
+            "item_sold" => "390",
+            "image" => "caramel.jpg"
         ]);
         
         Coffee::create([
             "name" => "Hazelnut Heaven",
             "price" => "29.00",
-            "item_sold" => "300"
+            "item_sold" => "400",
+            "image" => "hazelnut.jpg"
         ]);
 
         Coffee::create([
             "name" => "Maple Magic",
             "price" => "29.00",
-            "item_sold" => "120"
+            "item_sold" => "120",
+            "image" => "maple.jpg"
+        ]);
+
+        Coffee::create([
+            "name" => "Latte",
+            "price" => "29.00",
+            "item_sold" => "150",
+            "image" => "latte.jpg"
         ]);
     }
 }
