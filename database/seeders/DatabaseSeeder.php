@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             CoffeeSeeder::class,
-            QuoteSeeder::class,
+            TestimonialSeeder::class,
             BlogSeeder::class,
         ]);
     }
